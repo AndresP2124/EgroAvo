@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EvoAgro.View.RegisterPage"
+             Background="#9AEBA3">
+    <StackLayout Padding="40" Spacing="30" VerticalOptions="Center">
+
+        <!-- Logo o Título -->
+        <Label Text="Regístrate"
+               FontSize="40"
+               FontAttributes="Bold"
+               TextColor="#012030"
+               HorizontalOptions="Center" />
+
+        <Label Text="Siembra con nosotros🌷"
+       FontSize="16"
+       FontAttributes="Bold"
+       TextColor="#13678A"
+       HorizontalOptions="Center" />
+
+        <!-- Usuario -->
+        <Entry x:Name="usernameEntry"
+               Placeholder="Ingrese un nombre de usuario"
+               PlaceholderColor="#13678A"
+               TextColor="Black"
+               BackgroundColor="Transparent"
+               HeightRequest="50"
+               Margin="0,10,0,0"
+               FontSize="18"
+               HorizontalOptions="FillAndExpand" />
+
+        <!-- Email -->
+        <Entry x:Name="emailEntry"
+               Placeholder="Ingrese su Correo electrónico"
+               PlaceholderColor="#13678A"
+               TextColor="#012030"
+               BackgroundColor="Transparent"
+               HeightRequest="50"
+               Margin="0,10,0,0"
+               FontSize="18"
+               HorizontalOptions="FillAndExpand" />
+
+        <!-- Contraseña -->
+        <Entry x:Name="passwordEntry"
+               Placeholder="Ingrese una Contraseña"
+               IsPassword="True"
+               PlaceholderColor="#13678A"
+               TextColor="#012030"
+               BackgroundColor="Transparent"
+               HeightRequest="50"
+               Margin="0,10,0,0"
+               FontSize="18"
+               HorizontalOptions="FillAndExpand" />
+
+        <!-- Botón de registro -->
+        <Button Text="Me Regístrare"
+                TextColor="#45C4B0"
+                BackgroundColor="#012030"
+                FontSize="18"
+                CornerRadius="10"
+                HeightRequest="50"
+                Clicked="OnRegisterButtonClicked"
+                HorizontalOptions="FillAndExpand" />
+
+        <!-- Volver al login -->
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Label Text="¿Ya tienes una cuenta?"
+                   TextColor="#012030"
+                   FontSize="16" />
+            <Button Text="Inicia sesión" 
+                    BackgroundColor="Transparent"
+                    TextColor="#13678A"
+                    FontAttributes="Bold"
+                    Clicked="OnBackButtonClicked" />
+        </StackLayout>
+
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EvoAgro.View.LoginPage"
+             Background="#012030">
+    <ContentPage.Content>
+        <StackLayout Padding="40" Spacing="30" VerticalOptions="Center">
+
+            <!-- Logo o Título -->
+            <Label Text="EgroAvo"
+               FontSize="40"
+               FontAttributes="Bold"
+               TextColor="#45c4B0"
+               HorizontalOptions="Center" />
+
+            <!-- Usuario -->
+            <Entry x:Name="usernameEntry" 
+               Placeholder="Nombre del usuario" 
+               PlaceholderColor="#9AeBa3"
+               TextColor="White"
+               BackgroundColor="#012030"
+               HeightRequest="50"
+               Margin="0,10,0,0"
+               HorizontalOptions="FillAndExpand"
+               FontSize="18"
+               />
+
+            <!-- Contraseña -->
+            <Entry x:Name="passwordEntry" 
+               Placeholder="Contraseña"
+               IsPassword="True"
+               PlaceholderColor="#9AeBa3"
+               TextColor="White"
+               BackgroundColor="#012030"
+               HeightRequest="50"
+               Margin="0,10,0,0"
+               HorizontalOptions="FillAndExpand"
+               FontSize="18"
+                />
+
+            <!-- Botón de Iniciar Sesión -->
+            <Button Text="Iniciar Sesión"
+                TextColor="#13678A"
+                BackgroundColor="#9AEBA3"
+                FontSize="20"
+                CornerRadius="15"
+                HeightRequest="50"
+                Clicked="OnLoginButtonClicked"
+                FontAttributes="Bold"
+                HorizontalOptions="FillAndExpand" />
+
+            <!-- Redirección a registro -->
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label Text="¿No tienes una cuenta?"
+                   TextColor="#ffff"
+                   FontSize="16" />
+                <Button Text="Regístrate" 
+                    BackgroundColor="Transparent"
+                    TextColor="#45C4B0"
+                    FontAttributes="Bold"
+                    Clicked="OnRegisterButtonClicked" />
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
